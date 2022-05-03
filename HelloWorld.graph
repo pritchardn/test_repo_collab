@@ -1,0 +1,271 @@
+{
+    "linkDataArray": [
+        {
+            "from": -1,
+            "fromPort": "87071168-2dfd-4d3c-9076-404a728629a9",
+            "loop_aware": "0",
+            "to": -2,
+            "toPort": "ca6cdc51-9a0e-4706-a4e8-a34a1c67659f"
+        }
+    ],
+    "modelData": {
+        "eagleCommitHash": "b34ff925a5c6883fdba168c073afeffb9a9fc446",
+        "eagleVersion": "v4.2.0",
+        "filePath": "Diagram-2022-04-22-10-27-04.graph",
+        "fileType": "Graph",
+        "gitUrl": "",
+        "lastModifiedDatetime": 0,
+        "lastModifiedEmail": "",
+        "lastModifiedName": "",
+        "numLGNodes": 2,
+        "readonly": true,
+        "repo": "",
+        "repoBranch": "",
+        "repoService": "Unknown",
+        "schemaVersion": "OJS",
+        "sha": ""
+    },
+    "nodeDataArray": [
+        {
+            "applicationArgs": [
+                {
+                    "defaultValue": "World",
+                    "description": "What appears after 'Hello '",
+                    "name": "greet",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "Greet",
+                    "type": "String",
+                    "value": "World"
+                }
+            ],
+            "category": "PythonApp",
+            "collapsed": false,
+            "color": "#0059a5",
+            "description": "A simple APP that implements the standard Hello World in DALiuGE. It allows to change 'World' with some other string and it also permits to connect the single output port to multiple sinks, which will all receive the same message. App does not require any input.",
+            "drawOrderHint": 0,
+            "expanded": false,
+            "fields": [
+                {
+                    "defaultValue": "dlg.apps.simple.HelloWorldApp",
+                    "description": "Application class",
+                    "name": "appclass",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": true,
+                    "text": "Application Class",
+                    "type": "String",
+                    "value": "dlg.apps.simple.HelloWorldApp"
+                },
+                {
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "name": "execution_time",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": true,
+                    "text": "Execution Time",
+                    "type": "Float",
+                    "value": 5
+                },
+                {
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "name": "num_cpus",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": true,
+                    "text": "No. of CPUs",
+                    "type": "Integer",
+                    "value": 1
+                },
+                {
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "name": "group_start",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "Group start",
+                    "type": "Boolean",
+                    "value": false
+                },
+                {
+                    "defaultValue": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "name": "input_error_threshold",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "Input error rate (%)",
+                    "type": "Integer",
+                    "value": 0
+                },
+                {
+                    "defaultValue": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "name": "n_tries",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "Number of tries",
+                    "type": "Integer",
+                    "value": 1
+                }
+            ],
+            "flipPorts": false,
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "height": 72,
+            "inputAppFields": [],
+            "inputApplicationDescription": "",
+            "inputApplicationKey": null,
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputLocalPorts": [],
+            "inputPorts": [],
+            "isGroup": false,
+            "key": -1,
+            "outputAppFields": [],
+            "outputApplicationDescription": "",
+            "outputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputLocalPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "87071168-2dfd-4d3c-9076-404a728629a9",
+                    "IdText": "hello",
+                    "description": " The port carrying the message produced by the app.",
+                    "event": false,
+                    "text": "Hello",
+                    "type": "String"
+                }
+            ],
+            "precious": false,
+            "readonly": false,
+            "sha": "beaf931",
+            "streaming": false,
+            "subject": null,
+            "text": "HelloWorldApp",
+            "width": 200,
+            "x": 539,
+            "y": 303
+        },
+        {
+            "applicationArgs": [],
+            "category": "File",
+            "collapsed": false,
+            "color": "#2c2c2c",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "drawOrderHint": 0,
+            "expanded": false,
+            "fields": [
+                {
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "name": "data_volume",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "Data volume",
+                    "type": "Float",
+                    "value": 5
+                },
+                {
+                    "defaultValue": "false",
+                    "description": "Is this node the end of a group?",
+                    "name": "group_end",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "Group end",
+                    "type": "Boolean",
+                    "value": false
+                },
+                {
+                    "defaultValue": "true",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "name": "check_filepath_exists",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "Check file path exists",
+                    "type": "Boolean",
+                    "value": true
+                },
+                {
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "name": "filepath",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "File path",
+                    "type": "String",
+                    "value": ""
+                },
+                {
+                    "defaultValue": "",
+                    "description": "Name of the directory containing the file for this node",
+                    "name": "dirname",
+                    "options": [],
+                    "positional": false,
+                    "precious": false,
+                    "readonly": false,
+                    "text": "Directory name",
+                    "type": "String",
+                    "value": ""
+                }
+            ],
+            "flipPorts": false,
+            "git_url": "",
+            "height": 72,
+            "inputAppFields": [],
+            "inputApplicationDescription": "",
+            "inputApplicationKey": null,
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputLocalPorts": [],
+            "inputPorts": [
+                {
+                    "Id": "ca6cdc51-9a0e-4706-a4e8-a34a1c67659f",
+                    "IdText": "hello",
+                    "description": " The port carrying the message produced by the app.",
+                    "event": false,
+                    "text": "Hello",
+                    "type": "String"
+                }
+            ],
+            "isGroup": false,
+            "key": -2,
+            "outputAppFields": [],
+            "outputApplicationDescription": "",
+            "outputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputLocalPorts": [],
+            "outputPorts": [],
+            "precious": false,
+            "readonly": false,
+            "sha": "",
+            "streaming": false,
+            "subject": null,
+            "text": "File",
+            "width": 200,
+            "x": 917,
+            "y": 307
+        }
+    ]
+}
